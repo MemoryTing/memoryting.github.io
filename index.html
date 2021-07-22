@@ -2,19 +2,46 @@
 <html>
   <head>
     <meta charset="utf-8">
-		<link rel="stylesheet" href="./css/profile.css" />
-		<script src="./js/profile.js"></script>
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="./js/profile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     <title>Memory</title>
   </head>
   <body>
-    <div class="container">
-      <img id="rabbit" src="./image/stop.png" alt="Rabbit">
+    <div class=”container”>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="https://memoryting.github.io/">
+          <!-- <input type="button" id="logo" onclick="logo()"> -->
+          <img src="./image/logo.png" alt="logo" id="logo">
+        </a>
+        
+        <!-- .collapse.navbar-collapse 用於外層中斷點群組和隱藏導覽列內容 -->
+        <!-- 選單項目&漢堡式折疊選單 -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <!-- active表示當前頁面 -->
+            <li class="nav-item active">
+              <a class="nav-link" href="#">首頁<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">about me</a>
+            </li>
+            <!-- .dropdown Navbar選項使用下拉式選單 -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">作品集</a>
+              <!-- .dropdown-menu 下拉選單內容 -->
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">網頁設計</a>
+                <a class="dropdown-item" href="#">平面設計</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+      </nav>
     </div>
-    <span id="PHOTO_INFO">Photo by 
-      <a href="https://unsplash.com/@noaa?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="color:#2A3E3D">NOAA</a>
-       on <a href="https://unsplash.com/s/photos/antarctica?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="color:#2A3E3D">Unsplash</a>
-       and Rabbit by 
-      <a href="https://icons8.com/" style="color:#2A3E3D">Icons8</a>
-    </span>
   </body>
 </html>
